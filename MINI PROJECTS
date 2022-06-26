@@ -1,0 +1,72 @@
+#include <stdio.h>
+int main()
+{
+    int age,choice;
+    char movie[100],ticketcategory;
+    
+    printf("WELCOME TO SANGAM THEATER\n");
+    printf("Movies in our theater:\n1.KGF CHAPTER-2\n2.F3\n");
+    printf("Enter your movie option:\n");
+    scanf("%d",&choice);
+    switch (choice)
+    {   
+        case 1:
+        printf("enter your age:\n");
+        scanf("%d",&age);
+        if(age>13)
+        {
+        printf("book your tickets\n");
+        printf("There are three types of ticket categories:\na)seats in rows from F to J(price:202Rs)\nb)seats in rows from A to E(price:108Rs)\nseats in whole theater with food(price:389Rs)");
+        printf("enter the ticket category:\n");
+        scanf("%c",&ticketcategory);
+        switch (ticketcategory)
+        {
+            case 'a':
+            printf("pay Rs202\n");
+            printf("Your ticket booking is sucessful\n");
+            break;
+            case 'b':
+             printf("pay Rs108\n");
+             printf("Your ticket booking is sucessful\n");
+             break;
+             case 'c':
+             printf("pay Rs489\n");
+             printf("Your ticket booking is sucessful\n");
+             break;
+        
+        }
+        printf("Go to screen 1\n");
+        printf("Enjoy movie\n");
+        }
+        
+     else 
+        printf("This may harm you\nF3 movie is suggestible for you\n");
+        
+    case 2:
+    printf("book your tickets\n");
+        printf("There are three types of ticket categories:\na)seats in rows from F to J(price:202Rs)\nb)seats in rows from A to E(price:108Rs)\nseats in whole theater with food(price:389Rs)");
+        printf("enter the ticket category:\n");
+        scanf("%c",&ticketcategory);
+        switch (ticketcategory)
+        {
+            case 'a':
+            printf("pay Rs202\n");
+            printf("Your ticket booking is sucessful\n");
+            break;
+            case 'b':
+             printf("pay Rs108\n");
+             printf("Your ticket booking is sucessful\n");
+             break;
+             case 'c':
+             printf("pay Rs489\n");
+             printf("Your ticket booking is sucessful\n");
+             break;
+        }   
+        printf("Go to screen 2\n");
+        printf("Enjoy movie\n");
+    }
+    
+   return 0;
+            
+}
+
